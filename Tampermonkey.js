@@ -111,7 +111,7 @@
             } catch (e) {
                 console.log(`出现异常${JSON.stringify(e)}`);
             }
-            this.timer = setTimeout(this.start.bind(this), 30);
+            this.timer = setTimeout(this.start.bind(this), 10);
         }
 
         cartFn() {//购物车页面
