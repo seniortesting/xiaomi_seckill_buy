@@ -31,7 +31,9 @@
             } else if (pathname.startsWith('/cart')) {//购物车页面
                 sleep(200).then(() => { this.cartFn(); });
             } else if (pathname.startsWith('/buy/checkout')) {//提交订单页面
-                sleep(50).then(() => { $(".address-item")[0] && $(".address-item")[0].click(); });
+                sleep(50).then(() => {
+                    $(".address-item")[0] && $(".address-item")[0].click();
+                });
             }
         }
 
